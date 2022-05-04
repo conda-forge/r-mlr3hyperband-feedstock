@@ -1,4 +1,4 @@
-{% set version = '0.4.0' %}
+{% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mlr3hyperband_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mlr3hyperband/mlr3hyperband_{{ version }}.tar.gz
-  sha256: 43a929587485a36a2cec9677581465ac1ed93738a908e350e85a9619b4a9fc64
+  sha256: d00862b4ad07a1b17a46c868d769e63228554fc4a4a34090b3675eaff2223606
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -55,11 +55,8 @@ test:
 about:
   home: https://mlr3hyperband.mlr-org.com, https://github.com/mlr-org/mlr3hyperband
   license: LGPL-3.0-only
-  summary: Implements hyperband method for hyperparameter tuning.  Various termination criteria
-    can be set and combined. The class 'AutoTuner' provides a convenient way to perform
-    nested resampling in combination with 'mlr3'. The hyperband algorithm was proposed
-    by Lisha Li, Kevin Jamieson, Giulia DeSalvo, Afshin Rostamizadeh and Ameet Talwalkar
-    (2018) <arXiv:1603.06560>.
+  summary: Implements hyperband method for hyperparameter tuning.  Various termination criteria can be set and combined. The class 'AutoTuner' provides a convenient way to perform nested resampling in combination with 'mlr3'. The hyperband algorithm was proposed by Lisha Li, Kevin Jamieson, Giulia DeSalvo, Afshin Rostamizadeh
+    and Ameet Talwalkar (2018) <arXiv:1603.06560>.
   license_family: LGPL
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3
