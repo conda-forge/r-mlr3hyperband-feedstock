@@ -1,11 +1,11 @@
-About r-mlr3hyperband
-=====================
+About r-mlr3hyperband-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mlr3hyperband-feedstock/blob/main/LICENSE.txt)
 
 Home: https://mlr3hyperband.mlr-org.com, https://github.com/mlr-org/mlr3hyperband
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mlr3hyperband-feedstock/blob/main/LICENSE.txt)
 
 Summary: Implements hyperband method for hyperparameter tuning.  Various termination criteria can be set and combined. The class 'AutoTuner' provides a convenient way to perform nested resampling in combination with 'mlr3'. The hyperband algorithm was proposed by Lisha Li, Kevin Jamieson, Giulia DeSalvo, Afshin Rostamizadeh and Ameet Talwalkar (2018) <arXiv:1603.06560>.
 
