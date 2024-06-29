@@ -1,4 +1,4 @@
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mlr3hyperband_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mlr3hyperband/mlr3hyperband_{{ version }}.tar.gz
-  sha256: 374cb6c8424282e6a81b6f7dc878e3cecf7a4adab8b460706264d1de1474dbf4
+  sha256: 47b26fb7b276028be8a704271ae80264a114ab9b9c5a130792abfee0195b29eb
 
 build:
   merge_build_host: true  # [win]
